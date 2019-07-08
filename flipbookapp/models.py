@@ -86,10 +86,11 @@ class User(AbstractBaseUser):
     objects = UserManager()
 
 
-"""
 class Collection(models.Model):
+    title = models.CharField(max_length=48)
 
 
+"""
 class Image(models.Model):
 
 
