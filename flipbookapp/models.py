@@ -89,6 +89,9 @@ class User(AbstractBaseUser):
 class Collection(models.Model):
     title = models.CharField(max_length=48)
 
+    def __str__(self):
+        return self.title
+
 
 """
 class Image(models.Model):
